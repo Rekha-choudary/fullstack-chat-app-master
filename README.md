@@ -1,4 +1,7 @@
-# fullstack-chat-app-master
+
+
+
+# Fullstack-chat-app-master
 Real-time chat app with authentication, online status, image sharing, typing indicators, profile management, and multi-theme UI. Built using MERN + Socket.io with a clean, responsive design.
 # Chatty – Real-Time Chat Application
 
@@ -23,3 +26,44 @@ It supports text messaging, image sharing, live online status, themes, and profi
 cd backend
 npm install
 npm start
+```
+---
+
+### Create .env file inside /backend
+``` bash
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_jwt_secret_key
+
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+CLIENT_URL=http://localhost:5173
+```
+---
+
+###Project Structure
+```bash
+fullstack-chat-app/
+│
+├── backend/
+│   ├── src/
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── lib/
+│   │   └── index.js
+│   └── .env
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── store/
+│   │   ├── pages/
+│   │   └── main.jsx
+│   └── .env
+│
+└── README.md
+
